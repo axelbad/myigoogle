@@ -6,68 +6,59 @@
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Home</a>
+                @foreach ($feeds_tabs as $feed_tab)
+
+                    <a class="nav-item nav-link active" id="nav-{{ $feed_tab->tab_name }}-tab" data-toggle="tab"
+                        href="#nav-{{ $feed_tab->tab_name }}" role="tab" aria-controls="nav-{{ $feed_tab->tab_name }}"
+                        aria-selected="true">{{ $feed_tab->tab_name }}</a>
+
+                @endforeach
 
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
 
             <div class="row">
-                <div class="col-sm">
 
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="card">
-                            <div class="card-header">
-                                Featured
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
+                @foreach ($feeds as $feed)
 
-                </div>
-                <div class="col-sm">
-
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="card">
-                            <div class="card-header">
-                                Featured
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    {{--  <div class="col-sm-4">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="card">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                </div>
-                <div class="col-sm">
+                    <ul id="column<?php //echo $i; ?>" class="column">
 
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="card">
-                            <div class="card-header">
-                                Featured
+                        <li class="widget red" style="">
+                            <div class="widget-head" style="padding: 0 0;">
+                                <a href="" target="_blank" style="">
+                                    <h3 style="line-height: 30px; font-size: 14px;">asd</h3>
+                                </a>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="widget-content" id="content" style="padding: 10px 0;">
+                                ufgykguykugyfgiuilgulgiuilu;hilgu
                             </div>
-                        </div>
-                    </div>
+                        </li>
 
-                </div>
+                    </ul>
+
+                @endforeach
+
             </div>
         </div>
-
+    </div>
 
 
     </div>

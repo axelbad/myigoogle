@@ -18,6 +18,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <link href="{{ asset('css/inettuts.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/inettuts.js.css') }}" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="{{ asset('js/inettuts.js') }}"></script>
 </head>
 <body>
     <div id="app">

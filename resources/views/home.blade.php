@@ -8,7 +8,7 @@
         $num_colonne = $feeds->max('col');
         for($i=1; $i<=$num_colonne; $i++)
 		{
-            $filtered = $feeds->where('col', $i);
+            $filtered = $feeds->where('col', $i)->sortBy('order');
 ?>
             <ul id="column{{ $i }} ?>" class="column">
 <?php

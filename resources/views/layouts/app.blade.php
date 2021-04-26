@@ -22,9 +22,18 @@
     <link href="{{ asset('css/inettuts.css') }}" rel="stylesheet">
     <link href="{{ asset('css/inettuts.js.css') }}" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <script src="{{ asset('js/inettuts.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/backstretch.js"></script>
+
+    <link href="css/flatnav.css" rel="stylesheet">
+    <link href="css/tab_menu.css" rel="stylesheet">
+
+    <link href="css/inettuts.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="app">
@@ -86,5 +95,7 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="{{ asset('js/inettuts.js') }}"></script>
 </body>
 </html>

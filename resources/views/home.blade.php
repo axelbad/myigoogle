@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
 
         <div id="columns">
 
@@ -84,5 +84,7 @@
         </div>
 
     </div>
-
+<script>
+    $.backstretch("http://www.ighome.com/css/themes/images/maldives.jpg");
+</script>
 @endsection

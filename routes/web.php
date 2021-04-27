@@ -21,3 +21,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/get_feed_pie', [App\Http\Controllers\HomeController::class, 'get_feed_pie']);
